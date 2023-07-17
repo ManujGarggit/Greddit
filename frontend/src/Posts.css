@@ -1,0 +1,29 @@
+.stick {
+    overflow: hidden;
+    width:550px;
+    display:inline-block;
+    margin-top: 30px;
+}
+
+.scroll {
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: #f5f5f5;
+    width: 1281px;
+    display: inline-block;
+    position: absolute;
+    height: 100%;
+    margin-top:60px;
+}
+
+.bodyScroll::-webkit-scrollbar {
+    display: none;
+}
+
+.scroll::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+
