@@ -6,20 +6,26 @@
 
 > Roll No - 2021101047
 
-#### FOR THE USER THE USERNAME IS TREATED AS UNIQUE IDENTIFIER FOR THAT USER ####
+##### FOR THE USER THE USERNAME IS TREATED AS UNIQUE IDENTIFIER FOR THAT USER ####
 
-#### IF A USER ENTERS AN INVALID ADDRESS HE/SHE WILL BE REDIRECTED TO NOT FOUND PAGE WHERE THE USER CAN GO BACK TO LOGIN OR PROFILE PAGE ####
+##### IF A USER ENTERS AN INVALID ADDRESS HE/SHE WILL BE REDIRECTED TO NOT FOUND PAGE WHERE THE USER CAN GO BACK TO LOGIN OR PROFILE PAGE ####
 
-#### DIRECT API CALLS ARE ALSO HANDELED WHEREVER MENTIONED ####
+##### DIRECT API CALLS ARE ALSO HANDELED WHEREVER MENTIONED ####
+
+----
 
 ### LOGIN AND REG ###
 - A user can register with valid EMIALID ( should be of the format string@domain where domain includes gmail.co/gmail.com) , VALID AGE (should be a number and between 8 and 100) , VALID CONTACT NUMBER (should be a 10-digit number) 
 - If any of the above conditions are not met , the register button will be disabled (also handeled in direct api call) . Once registered the user will be redirected to login page where he/she can login into the website
-- A token is generated on login and the user is only redirected to profile page iff the token is not changed 
+- A token is generated on login and the user is only redirected to profile page iff the token is not changed
+
+----
 
 ### PROFILE ###
 - Once logged in the user is redirected to profile page where links to subgreddit , his/her subgreddit page , saved post page
-- Here the user can edit the profile except the username with input validation done in frontend only 
+- Here the user can edit the profile except the username with input validation done in frontend only
+
+----
 
 ### MY SUB ###
 - We can create , view(also open them) and delete subgreddits here where the moderator is the current user
@@ -31,6 +37,8 @@
 - Once a user is blocked , he/she is permanently blocked (can't request to join the subgred)
 - The variable for not handling a report is set to 10 days
 
+----
+
 ### SUB GRED ###
 - Here searching and filtering is implemented that can be applied one after another
 - But once the sorting is applied can't apply search or filter again on the reslutant (have to default to none if we want to do any of that action).
@@ -38,6 +46,8 @@
 - For moderators the leave button is disabled whereas a user if not blocked or haven't requested earlier or haven't been rejected within 7 days time period of rejection and pressing of join button now can request to join the subgred
 - Only the joined users can view the posts in the subgred
 - Also the tags will be defaulted to lower case only when the user creates a subgred
+
+----
 
 ### POST ###
 - Here any joined user of that subgreddit can view the posts posted by the users once joined in that subgred
@@ -52,6 +62,14 @@
 - When a user adds a post and if the post has the banned keywords as defined the keywords will be replaced by "*". Also this keyword should be proper like if the banned keyword is hey then hey? won't be considered.
 - If the moderator blocks a user other joined user (other than the mods) will see the name replaced by BLOCKED USER as mentioned
 - Also a user can't follow a blocked user or himself/herself
+
+----
+
+### BONUS ###
+
+- FUZZY SEACRH
+
+----
 
 <br>
 
